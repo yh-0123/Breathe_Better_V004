@@ -38,7 +38,7 @@ final Map<String, String> enUs = {
   "lbl_and_many_more": "And Many More!",
   "lbl_4h": "4h",
   "msg_how_does_food_impact": "How Does Food Impact Health?",
-  "msg_how_does_breathe": "How does \nBreathe Better works? ",
+  "msg_how_does_breathe": "How does \nBreathe Better work? ",
   "lbl_jumping_jacks": "Jumping Jacks",
   "lbl_mary_faye": "Mary Faye",
   "lbl_myr": "MYR",
