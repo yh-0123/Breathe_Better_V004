@@ -195,7 +195,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                     .txtDMSansBold24Green900)),
                                         Padding(
                                             padding:
-                                                getPadding(left: 1, top: 33),
+                                                getPadding(left: 5, top: 33),
                                             child: Row(
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
@@ -204,8 +204,8 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                   Container(
                                                       padding: getPadding(
                                                           left: 12,
-                                                          top: 18,
-                                                          right: 12,
+                                                          top: 22,
+                                                          right: 15,
                                                           bottom: 18),
                                                       decoration: AppDecoration
                                                           .outlineBlack90019
@@ -283,7 +283,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                       children: [
                                                         Container(
                                                             padding: getPadding(
-                                                                left: 18,
+                                                                left: 23,
                                                                 top: 17,
                                                                 right: 18,
                                                                 bottom: 17),
@@ -535,7 +535,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                           padding: getPadding(
                                                               left: 21,
                                                               top: 15,
-                                                              right: 21,
+                                                              right: 45,
                                                               bottom: 15),
                                                           decoration: AppDecoration
                                                               .outlineBlack900191
@@ -597,7 +597,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                           padding: getPadding(
                                                               left: 16,
                                                               top: 9,
-                                                              right: 16,
+                                                              right: 12,
                                                               bottom: 9),
                                                           decoration: AppDecoration
                                                               .outlineBlack900191
