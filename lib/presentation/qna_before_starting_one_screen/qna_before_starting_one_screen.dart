@@ -1,4 +1,4 @@
-import 'package:breathebetter/Compontents/custom_text_field.dart';
+import 'package:breathebetter/components/custom_text_field.dart';
 
 import 'controller/qna_before_starting_one_controller.dart';
 import 'package:breathebetter/core/app_export.dart';

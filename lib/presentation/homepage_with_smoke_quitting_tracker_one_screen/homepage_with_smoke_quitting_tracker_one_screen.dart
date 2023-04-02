@@ -1,3 +1,4 @@
+import '../../components/sidebar/widget/navigation_drawer_widget.dart';
 import 'controller/homepage_with_smoke_quitting_tracker_one_controller.dart';
 import 'package:breathebetter/core/app_export.dart';
 import 'package:breathebetter/widgets/app_bar/appbar_image.dart';
@@ -13,6 +14,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+            drawer: NavigationDrawerWidget(),
             backgroundColor: ColorConstant.whiteA700,
             body: Container(
                 width: double.maxFinite,
@@ -22,7 +24,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                       Container(
                           width: double.maxFinite,
                           child: Container(
-                              padding: getPadding(top: 19, bottom: 19),
+                              padding: getPadding(top: 19, bottom: 40),
                               decoration: AppDecoration.fillGreen90002,
                               child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -646,92 +648,82 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                                             1))
                                                               ])))
                                                 ])),
-                                        Container(
-                                            height: getVerticalSize(159),
-                                            width: getHorizontalSize(380),
-                                            margin: getMargin(top: 15),
-                                            child: Stack(
-                                                alignment: Alignment.centerLeft,
-                                                children: [
-                                                  Align(
-                                                      alignment:
-                                                          Alignment.centerRight,
-                                                      child: Card(
-                                                          clipBehavior:
-                                                              Clip.antiAlias,
-                                                          elevation: 0,
-                                                          margin:
-                                                              EdgeInsets.all(0),
-                                                          color: ColorConstant
-                                                              .green5003,
-                                                          shape: RoundedRectangleBorder(
-                                                              borderRadius:
-                                                                  BorderRadiusStyle
-                                                                      .circleBorder25),
-                                                          child: Container(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      159),
-                                                              width:
-                                                                  getHorizontalSize(
-                                                                      184),
-                                                              padding:
-                                                                  getPadding(
+                                        GestureDetector(
+                                            onTap: () {
+                                              onTapColumnbreatherjourney();
+                                            },
+                                            child: Container(
+                                                height: getVerticalSize(159),
+                                                width: getHorizontalSize(380),
+                                                margin: getMargin(top: 15),
+                                                child: Stack(
+                                                    alignment:
+                                                        Alignment.centerLeft,
+                                                    children: [
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerRight,
+                                                          child: Card(
+                                                              clipBehavior: Clip
+                                                                  .antiAlias,
+                                                              elevation: 0,
+                                                              margin: EdgeInsets
+                                                                  .all(0),
+                                                              color:
+                                                                  ColorConstant
+                                                                      .green5003,
+                                                              shape: RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadiusStyle
+                                                                          .circleBorder25),
+                                                              child: Container(
+                                                                  height:
+                                                                      getVerticalSize(
+                                                                          159),
+                                                                  width:
+                                                                      getHorizontalSize(
+                                                                          184),
+                                                                  padding: getPadding(
                                                                       left: 15,
                                                                       top: 8,
                                                                       right: 15,
                                                                       bottom:
                                                                           8),
-                                                              decoration: AppDecoration
-                                                                  .outlineBlack900191
-                                                                  .copyWith(
-                                                                      borderRadius:
-                                                                          BorderRadiusStyle
+                                                                  decoration: AppDecoration
+                                                                      .outlineBlack900191
+                                                                      .copyWith(
+                                                                          borderRadius: BorderRadiusStyle
                                                                               .circleBorder25),
-                                                              child: Stack(
-                                                                  alignment:
-                                                                      Alignment
-                                                                          .topRight,
-                                                                  children: [
-                                                                    CustomImageView(
-                                                                        svgPath:
-                                                                            ImageConstant
-                                                                                .imgBreathingexerciserafiki,
-                                                                        height: getVerticalSize(
-                                                                            95),
-                                                                        width: getHorizontalSize(
-                                                                            128),
-                                                                        alignment:
-                                                                            Alignment.bottomCenter),
-                                                                    Align(
-                                                                        alignment:
-                                                                            Alignment
+                                                                  child: Stack(
+                                                                      alignment:
+                                                                          Alignment
+                                                                              .topRight,
+                                                                      children: [
+                                                                        CustomImageView(
+                                                                            svgPath:
+                                                                                ImageConstant.imgBreathingexerciserafiki,
+                                                                            height: getVerticalSize(95),
+                                                                            width: getHorizontalSize(128),
+                                                                            alignment: Alignment.bottomCenter),
+                                                                        Align(
+                                                                            alignment: Alignment
                                                                                 .topRight,
-                                                                        child: Container(
-                                                                            width:
-                                                                                getHorizontalSize(146),
-                                                                            margin: getMargin(top: 22),
-                                                                            child: Text("msg_your_breather_journey".tr, maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtDMSansBold20Black900)))
-                                                                  ])))),
-                                                  Align(
-                                                      alignment:
-                                                          Alignment.centerLeft,
-                                                      child: GestureDetector(
-                                                          onTap: () {
-                                                            onTapStackcomputer();
-                                                          },
-                                                          child: Container(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      159),
-                                                              width:
-                                                                  getHorizontalSize(
-                                                                      210),
-                                                              child: Stack(
-                                                                  alignment:
-                                                                      Alignment
-                                                                          .topRight,
-                                                                  children: [
+                                                                            child: Container(
+                                                                                width: getHorizontalSize(146),
+                                                                                margin: getMargin(top: 22),
+                                                                                child: Text("msg_your_breather_journey".tr, maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtDMSansBold20Black900)))
+                                                                      ])))),
+                                                      Align(
+                                                          alignment: Alignment
+                                                              .centerLeft,
+                                                          child: GestureDetector(
+                                                              onTap: () {
+                                                                onTapStackcomputer();
+                                                              },
+                                                              child: Container(
+                                                                  height: getVerticalSize(159),
+                                                                  width: getHorizontalSize(210),
+                                                                  child: Stack(alignment: Alignment.topRight, children: [
                                                                     Align(
                                                                         alignment:
                                                                             Alignment.centerLeft,
@@ -759,7 +751,7 @@ class HomepageWithSmokeQuittingTrackerOneScreen
                                                                             margin: getMargin(top: 27),
                                                                             child: Text("msg_health_improvement".tr, maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtDMSansBold20Black900)))
                                                                   ]))))
-                                                ])),
+                                                    ]))),
                                         Padding(
                                             padding: getPadding(
                                                 left: 5, top: 15, right: 1),
@@ -974,5 +966,9 @@ class HomepageWithSmokeQuittingTrackerOneScreen
 
   onTapStackrectangle2329() {
     Get.toNamed(AppRoutes.homepageWithSmokeQuittingTrackerScreen);
+  }
+
+  onTapColumnbreatherjourney() {
+    Get.toNamed(AppRoutes.yourJourneyHistoryOfWhatBreathersDoneScreen);
   }
 }

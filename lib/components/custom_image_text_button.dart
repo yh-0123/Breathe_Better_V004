@@ -36,11 +36,11 @@ class CustomImageTextButton extends StatelessWidget {
         ),
         child: Column(children: [
           Padding(
-            padding: EdgeInsets.only(left: 5, right: 5, top: 20, bottom: 5),
+            padding: EdgeInsets.only(left: 5, right: 5, top: 15, bottom: 5),
             child: Image.asset(imagePath, scale: imageScale),
           ),
           Container(
-              padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 7.0, vertical: 4.0),
               child: Text(
                 inputText,
                 textAlign: TextAlign.center,

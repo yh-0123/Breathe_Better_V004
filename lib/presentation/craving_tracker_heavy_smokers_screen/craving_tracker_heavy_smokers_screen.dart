@@ -17,6 +17,7 @@ class CravingTrackerHeavySmokersScreen
         backgroundColor: ColorConstant.whiteA700,
         body: SingleChildScrollView(
           child: Container(
+            margin: EdgeInsets.only(bottom: 40),
             width: double.maxFinite,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
